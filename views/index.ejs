@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AveragezXD - Roblox Animator</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-brand">🎬 AveragezXD</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="/admin/login">Admin</a>
+      <button class="theme-toggle">☀️</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content container">
+      <h1>
+        I am a passionate <span class="highlight">Roblox Animator</span> with
+        over <span class="highlight">6 years of experience</span> bringing
+        concepts to life through motion.
+      </h1>
+      <p>
+        My focus is strictly on animation—crafting seamless cutscenes, fluid action
+        sequences, and expressive movements using Blender and Moon Animator. I pride
+        myself on delivering clean, high-quality, and incredibly smooth keyframing for
+        every project I take on.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container" style="display: flex; gap: 4rem; align-items: center; flex-wrap: wrap;">
+      <div class="about-content" style="flex: 1; min-width: 300px;">
+        <h2>About Me</h2>
+        <p>
+          With over 6 years of dedicated experience in Roblox animation, I've honed my craft
+          to create animations that feel natural, responsive, and visually stunning. From
+          character movements to complex action sequences, I bring expertise and precision
+          to every frame.
+        </p>
+        <p>
+          I specialize in:
+        </p>
+        <div class="skills">
+          <div class="skill-tag">🎬 Cutscenes</div>
+          <div class="skill-tag">⚔️ Combat</div>
+          <div class="skill-tag">😊 Emotes</div>
+          <div class="skill-tag">🚶 Locomotion</div>
+          <div class="skill-tag">✨ Effects</div>
+          <div class="skill-tag">🎯 Moon Animator</div>
+          <div class="skill-tag">🖼️ Blender</div>
+          <div class="skill-tag">🎨 Keyframing</div>
+        </div>
+      </div>
+      <div class="about-image" style="flex: 1; min-width: 300px; text-align: center;">
+        <div style="width: 300px; height: 300px; background: linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(255, 0, 110, 0.2) 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 5rem; animation: float 4s ease-in-out infinite;">🎬</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">Explore my latest animation work</p>
+      
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="cutscene">Cutscenes</button>
+        <button class="filter-btn" data-filter="combat">Combat</button>
+        <button class="filter-btn" data-filter="emotes">Emotes</button>
+      </div>
+      
+      <div class="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p class="section-subtitle">Let's collaborate on your next animation project</p>
+      
+      <div class="contact-info">
+        <div class="contact-card">
+          <div class="contact-label">💬 Discord</div>
+          <div class="contact-value"><%= settings.discordUsername %></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 AveragezXD. All rights reserved.</p>
+    <p>Crafting smooth animations one frame at a time.</p>
+  </footer>
+
+  <script src="/js/theme.js"></script>
+  <script src="/js/portfolio.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "roblox-animator-portfolio",
+  "version": "1.0.0",
+  "description": "Premium Roblox Animator Portfolio with Admin Panel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": ["roblox", "animator", "portfolio"],
+  "author": "AveragezXD",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^9.0.0",
+    "express-validator": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
