@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="/css/weather.css">
+</head>
+<body data-api-key="<%= apiKey %>">
+  <!-- Navigation -->
+  <nav class="weather-nav">
+    <div class="weather-brand">🌤️ Weather Dashboard</div>
+    <div class="nav-actions">
+      <button class="theme-toggle-weather">🌙</button>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="weather-container">
+    <!-- Search Section -->
+    <div class="search-section">
+      <div class="search-box">
+        <input type="text" class="search-input" placeholder="Search city...">
+        <button class="btn btn-search">🔍 Search</button>
+        <button class="btn btn-secondary btn-geo">📍 My Location</button>
+      </div>
+    </div>
+
+    <!-- Main Grid -->
+    <div class="weather-grid">
+      <!-- Current Weather -->
+      <div class="current-weather">
+        <div class="weather-header">
+          <div class="location-info">
+            <h2>Loading...</h2>
+            <p></p>
+          </div>
+          <div class="temperature-large">--°</div>
+        </div>
+        <div class="weather-main">
+          <div class="weather-icon">🌡️</div>
+          <div class="weather-description">Loading...</div>
+        </div>
+        <div class="weather-details">
+          <div class="detail-item">
+            <div class="detail-label">Feels Like</div>
+            <div class="detail-value" data-detail="feels-like">--°</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Humidity</div>
+            <div class="detail-value" data-detail="humidity">--%</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Wind Speed</div>
+            <div class="detail-value" data-detail="wind">-- m/s</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Pressure</div>
+            <div class="detail-value" data-detail="pressure">-- hPa</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Visibility</div>
+            <div class="detail-value" data-detail="visibility">-- km</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">UV Index</div>
+            <div class="detail-value" data-detail="uv">--</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sun Times -->
+        <div class="sidebar-section">
+          <div class="sidebar-title">☀️ Sun Times</div>
+          <div class="info-item">
+            <span class="info-label">Sunrise</span>
+            <span class="info-value" data-detail="sunrise">--:--</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Sunset</span>
+            <span class="info-value" data-detail="sunset">--:--</span>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="sidebar-section">
+          <div class="sidebar-title">💾 Save Location</div>
+          <button class="btn" onclick="saveLocation()" style="width: 100%;">Save Current Location</button>
+        </div>
+
+        <!-- Saved Locations -->
+        <div class="sidebar-section">
+          <div class="sidebar-title">🗺️ Saved Locations</div>
+          <div class="saved-locations"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Forecast Section -->
+    <div class="forecast-section">
+      <h3 class="section-title">📅 5-Day Forecast</h3>
+      <div class="forecast-grid"></div>
+    </div>
+  </div>
+
+  <script src="/js/weather.js"></script>
+</body>
+</html>
